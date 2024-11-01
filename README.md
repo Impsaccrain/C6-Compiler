@@ -18,6 +18,11 @@ but obviously replace `[filepath]` with the actual path to your file. You can ru
 c6 --docs
 ```
 
+Use this to update it if there are any updates:
+```powershell
+npm update -g c6-compiler
+```
+
 # Why make this language?
 This language was made with the goal of being just as fast as languages like C or C++, while maintaining readability
 and easy usage. It provides a lot of extra functions and less boilerplate, as will be discussed in another section of the README.
