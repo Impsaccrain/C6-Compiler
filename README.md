@@ -55,28 +55,28 @@ Just like C++'s `std`, you can also put `using namespace c6;` at the top of your
 
 # Function Documentation (v1.1.0)
 
-**int c6::randint(int min, int max)**
+**`int c6::randint(int min, int max)`**
 Generates a random integer between the min and the max values then returns it.
 
-**void c6::write_file(std::string path, std::string contents, bool overwrite = true)**
+**`void c6::write_file(std::string path, std::string contents, bool overwrite = true)`**
 Writes the contents to the file at the provided path. Overwrite is optional and determines whether to overwrite
 the file or append to it. If there is no file at the provided path it will raise a `std::runtime_error`.
 
-**std::string c6::read_file(std::string path)**
+**`std::string c6::read_file(std::string path)`**
 Gets the contents of the file at the provided path and returns them. If there is no file at the provided
 path it will raise a `std::runtime_error`.
 
-**void c6::println(T text)**
+**`void c6::println(T text)`**
 Prints the provided text to the console with an automatic newline. The text can be a variety of types, including
 `std::string`, `int`, `long`, `double`, `float`, and other primitive types.
 
-**std::string c6::input(T text)**
+**`std::string c6::input(T text)`**
 Prints the provided text to the console and waits for user input. Once it recieves user input, it will return it as a `std::string`.
 
-**int c6::to_int(std::string value)**
+**`int c6::to_int(std::string value)`**
 Attempts to convert the `std::string` value to an int then return it. If it fails, it will throw a `std::runtime_error`.
 
-**std::string c6::to_string(T value)**
+**`std::string c6::to_string(T value)`**
 Will convert any primitive type to a string (`int`, `float`, `double`, `long`, `bool`, etc).
 
 # Changelog
