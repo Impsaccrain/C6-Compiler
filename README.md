@@ -82,7 +82,16 @@ Prints the provided text to the console and waits for user input. Once it reciev
 Attempts to convert the `std::string` value to an int then return it. If it fails, it will throw a `std::runtime_error`.
 
 **`std::string c6::to_string(T value)`**
-Will convert any primitive type to a string (`int`, `float`, `double`, `long`, `bool`, etc).
+Will convert any number-like primitive type to a string. This includes the following:
+- `int`
+- `long`
+- `long long`
+- `unsigned int`
+- `unsigned long`
+- `unsigned long long`
+- `float`
+- `double`
+- `long double`
 
 # Changelog
 
