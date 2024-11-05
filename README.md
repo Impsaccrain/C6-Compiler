@@ -11,12 +11,26 @@ c6
 ```
 to get the help menu for C6. Use this to compile a C6 file:
 ```powershell
-c6 [filepath]
+c6 <filepath>
 ```
-but obviously replace `[filepath]` with the actual path to your file. You can run this to get the current version's documentations:
+but obviously replace `<filepath>` with the actual path to your file.
+
+You can benchmark how long it takes for a file to be compiled like this:
+```powershell
+c6 --benchmark <filepath>
+```
+
+You can run this to get the current version's documentations:
 ```powershell
 c6 --docs
 ```
+You can also use `c6 -d`.
+
+This is how you can view the current version of the compiler:
+```powershell
+c6 --version
+```
+You can also use `c6 -v`.
 
 Use this to update it if there are any updates:
 ```powershell
