@@ -130,10 +130,10 @@ Example:
 ```cpp
 int main() {
     int x = 0;
-    auto increment = fn(int &x) {
-        x++;
+    auto increment = fn(int x) {
+        x++; // doesnt modify original x
     };
-    increment(x); // x must be passed as an argument
+    increment(x); // x must be passed as an argument to get value
     return 0;
 };
 ```
